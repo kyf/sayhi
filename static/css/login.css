@@ -1,0 +1,82 @@
+	body{
+		color:white;
+		margin:0;
+		padding:0;
+		background:#58AB53;
+		overflow:hidden;
+	}
+
+	.bg{
+		-webkit-filter: blur(10px); /* Chrome, Opera */
+		-moz-filter: blur(3px);
+		-ms-filter: blur(3px);    
+		filter: blur(3px);    
+		filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=3, MakeShadow=false); /* IE6~IE9 */
+		width:100%;
+		height:100%;
+		position:fixed;
+		background:url(/images/login-bg.jpg) center no-repeat;
+		background-size:100%;
+	}
+
+	.main_container{
+		position:fixed;
+		left:0px;
+		right:0px;
+		top:0px;
+		bottom:0px;
+		margin:auto;
+		width:300px;
+		height:300px;
+	}
+
+	.title{
+		font-size:22px;
+		font-weight:bold;
+		text-align:center;
+		line-height:35px;
+	}
+
+	input{
+		border-radius:5px;
+		border:1px solid #58AB53;
+		height:35px;
+		line-height:35px;
+		width:100%;
+		font-size:16px;
+	}
+
+	.label{
+		line-height:35px;
+		font-size:18px;
+	}
+
+	.label span{
+		text-indent:25px;
+		color:red;
+		display:block;
+		float:right;
+	}
+
+	.logbt{
+		margin-top:20px;
+		line-height:35px;
+		font-size:18px;
+		color:white;
+		border-radius:5px;
+		background:green;
+		padding:3px 18px;
+		border:1px solid green;
+		width:300px;
+	}
+
+	.logbt:active{
+		border:1px solid #58AB53;
+	}
+
+	.button_item{
+		margin-top:10px;
+		text-align:right;
+	}
+
+

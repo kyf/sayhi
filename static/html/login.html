@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>Say Hi</title>
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+<meta name="format-detection" content="telephone=no"/>
+<link rel="stylesheet" href="/css/login.css"/>
+<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+</head>
+<body ng-app="login">
+<div class="bg">
+</div>
+<div class="main_container" ng-controller="LoginController">
+	<div class="title">User Login</div>
+	<div class="label">User<span ng-bind="username_tip"></span></div>
+	<div>
+		<input type="text" ng-model="username" placeholder1="please enter username ..." />
+	</div>
+
+	<div class="label">Password<span ng-bind="password_tip"></span></div>
+	<div>
+		<input type="password" ng-model="password" placeholder1="please enter password ..." />
+	</div>
+
+	<div class="button_item">
+		<button class="logbt" title="login" ng-click="submit()">log in</button>
+	</div>
+
+</div>
+</body>
+</html>
+<script src="/js/util/util.js"></script>
+<script src="/js/page/login.js"></script>
